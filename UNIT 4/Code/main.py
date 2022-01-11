@@ -2,7 +2,7 @@
 # NAME OF THE PROGRAM:  
 # DATE OF CREATION:  
 # PURPOSE OF PROGRAM:  
-
+print("Hello World")
 
 # VARIABLE DEFINITION
 
