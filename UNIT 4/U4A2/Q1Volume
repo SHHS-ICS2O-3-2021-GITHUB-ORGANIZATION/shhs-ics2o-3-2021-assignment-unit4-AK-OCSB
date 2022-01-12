@@ -1,0 +1,26 @@
+# NAME OF AUTHOR:Ashley Koza  
+# NAME OF THE PROGRAM: Q1Volume  
+# DATE OF CREATION: 2022-01-12
+# PURPOSE OF PROGRAM: Practice proper coding practices. Calculate volume of a rectangular prism.
+
+
+# VARIABLE DEFINITION
+
+width = 0
+height = 0
+depth = 0
+volume = 0
+
+# INPUT
+
+width = int(input("Please enter the width of the rectangular prism: "))
+height = int(input("Please enter the height of the rectangular prism: "))
+depth = int(input("Please enter the depth of the rectangular prism: "))
+
+# PROCESSING
+
+volume = width * height * depth
+
+# OUTPUT
+
+print("The volume of the rectangular prism is: " + str(volume) + "cm^3")
