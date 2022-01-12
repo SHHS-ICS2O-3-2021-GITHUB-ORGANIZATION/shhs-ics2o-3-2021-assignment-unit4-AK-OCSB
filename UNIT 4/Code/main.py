@@ -1,6 +1,6 @@
-# NAME OF AUTHOR:  
+# NAME OF AUTHOR:Ashley Koza  
 # NAME OF THE PROGRAM:  
-# DATE OF CREATION:  
+# DATE OF CREATION:2022-01-12  
 # PURPOSE OF PROGRAM:  
 
 
@@ -10,13 +10,13 @@
 
 
 
-# INPUT
+# INPUT(Input from user)
 
 
 
 
 
-# PROCESSING
+# PROCESSING(Algorithm)
 
 
 
