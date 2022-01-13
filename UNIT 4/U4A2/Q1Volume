@@ -19,8 +19,8 @@ depth = int(input("Please enter the depth of the rectangular prism: "))
 
 # PROCESSING
 
-volume = width * height * depth
+volumeRec = width * height * depth
 
 # OUTPUT
 
-print("The volume of the rectangular prism is: " + str(volume) + "cm^3")
+print("The volume of the rectangular prism is: " + str(volumeRec) + "cm^3")
