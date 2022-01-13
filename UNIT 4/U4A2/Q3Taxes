@@ -22,8 +22,14 @@ totalCostTax = 0
 
 # INPUT
 
+
+
+#Informing users not to use floats
 print("Please enter integers and no floats.")
 
+
+
+#Prompt user for cost of each item, assign to variables.
 item1 = int(input("Please enter the cost of the first item: "))
 item2 = int(input("Please enter the cost of the second item: "))
 item3 = int(input("Please enter the cost of the third item: "))
@@ -37,17 +43,32 @@ item10 = int(input("Please enter the cost of the tenth item: "))
 
 # PROCESSING
 
+
+#Caculating cost of all ten items without tax
 totalCostNoTax = (item1 + item2 + item3 + item4 + item5 + item6 + item7 + item8 + item9 + item10)
 
+
+
+#Caculating the tax of all ten items, then rounding to the nearest hundreth
 tax = totalCostNoTax * 0.13
 tax = "{:.2f}".format(tax)
 
+
+
+#Caculating the cost of all ten items with tax, then rounding to the nearest hundreth.
 totalCostTax =  totalCostNoTax * 1.13
 totalCostTax = "{:.2f}".format(totalCostTax)
 
 # OUTPUT
 
-print("The final answer will be rounded to the nearest hundreth.")
+
+
+#Informing user information will be rounded
+print("The final answers will be rounded to the nearest hundreth.")
+
+
+
+#Display tax, total cost without tax, total cost with tax to the user
 print("The tax of these 10 items is: " + "$" + str(tax))
 print("The total cost of these 10 items without tax is: " + "$" + str(totalCostNoTax))
 print("The total cost of these 10 items with tax is: " + "$" + str(totalCostTax))

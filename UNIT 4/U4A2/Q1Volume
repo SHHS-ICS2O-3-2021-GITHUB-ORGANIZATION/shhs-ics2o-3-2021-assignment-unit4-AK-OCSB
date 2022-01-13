@@ -4,23 +4,32 @@
 # PURPOSE OF PROGRAM: Practice proper coding practices. Calculate volume of a rectangular prism.
 
 
-# VARIABLE DEFINITION
+#VARIABLE DEFINITION
 
 width = 0
 height = 0
 depth = 0
 volumeRec = 0
 
-# INPUT
+#INPUT
 
+
+
+#prompt user for width, height, and depth of a rectangular prism, assign to variables.
 width = int(input("Please enter the width of the rectangular prism: "))
 height = int(input("Please enter the height of the rectangular prism: "))
 depth = int(input("Please enter the depth of the rectangular prism: "))
 
-# PROCESSING
+#PROCESSING
 
+
+
+#Calculate volume of input
 volumeRec = width * height * depth
+
 
 # OUTPUT
 
+
+#Display volume to user
 print("The volume of the rectangular prism is: " + str(volumeRec) + "cm^3")
