@@ -1,0 +1,46 @@
+# NAME OF AUTHOR:Ashley Koza  
+# NAME OF THE PROGRAM:Q2RamdomRange
+# DATE OF CREATION:2022-01-14
+# PURPOSE OF PROGRAM: Practice math modules. 
+
+
+# VARIABLE DEFINITION
+
+number1 = 0
+number2 = 0
+maxnumber = 0
+minnumber = 0
+rand1 = 0
+
+# INPUT
+
+
+#Explain to user what is happening.
+print("Below you may enter 2 integers that will act as a range.\nThe program will give you a random number between said range.\n")
+
+
+#promt user for 2 intergers
+number1 = int(input("Please enter an integer: "))
+number2 = int(input("Please enter another integer: "))
+
+
+# PROCESSING
+
+
+import random
+
+
+#define the max and min value as to not cause an error.
+maxnumber = max(number1 , number2)
+minnumber = min(number1 , number2)
+
+
+#Sets a range, then picks a random number between said range.
+rand1 = random.randint(minnumber, maxnumber)
+
+
+# OUTPUT
+
+
+#Displays random number to user.
+print("\nThis is your random number, in the range of the 2 numbers you choose: " + str(rand1))
