@@ -1,0 +1,68 @@
+# NAME OF AUTHOR:Ashley Koza  
+# NAME OF THE PROGRAM:Q4Picture(Mr.Bobbie the Penquin)
+# DATE OF CREATION:2022-01-14
+# PURPOSE OF PROGRAM: Practice pygame modules.
+
+#On my PC the screen is a lot larger , therefore the image I found is different on my PC then my chromebook. I took a screen shot of what it looks like on my PC and put in inside U4A3 on Hapara.
+
+
+#IMPORT/INITIALIZE
+
+
+import pygame
+from pygame import Color, Rect, draw
+
+
+#initialize pygame modules
+pygame.init()
+
+
+# PROCESSING
+
+
+#Surface for graphics display
+gameDisplay = pygame.display.set_mode((800,500))
+
+
+#Background-Sky/Ice colour
+gameDisplay.fill(Color('lightblue'))
+
+
+#Drawing the base of the penquins body
+draw.rect(gameDisplay, Color('gray23'), Rect(300, 50, 200, 300))
+
+
+#Drawing the eyes of the penquin
+pygame.draw.circle(gameDisplay, Color('black'), (375,100), (12) , (0))
+pygame.draw.circle(gameDisplay, Color('black'), (420,100), (12) , (0))
+
+
+#Drawing the beak of the penquin
+draw.polygon(gameDisplay, Color('darkorange'), [(400, 175), (450,120), (350,120)])
+
+
+#Drawing stomach of the penquin
+draw.rect(gameDisplay, Color('darkgray'), Rect(330, 200, 140, 150)) 
+
+
+#Drawing arms/fins of the penquin
+draw.polygon(gameDisplay, Color('gray23'), [(175, 175), (450,200), (350,120)])
+draw.polygon(gameDisplay, Color('gray23'), [(350, 200), (620,175), (450,120)])
+
+
+#Drawing snowbanks
+pygame.draw.circle(gameDisplay, Color('white'), (70,425), (125) , (0))
+pygame.draw.circle(gameDisplay, Color('white'), (200,425), (125) , (0))
+pygame.draw.circle(gameDisplay, Color('white'), (350,425), (125) , (0))
+pygame.draw.circle(gameDisplay, Color('white'), (500,425), (125) , (0))
+pygame.draw.circle(gameDisplay, Color('white'), (650,425), (125) , (0))
+pygame.draw.circle(gameDisplay, Color('white'), (800,425), (125) , (0))
+
+
+#OUTPUT
+
+#Shows the graphics on the screen
+pygame.display.update()
+
+#Exit the pygame modules-comment out so the picture can be seen
+#pygame.quit()
