@@ -43,4 +43,4 @@ rand1 = random.randint(minnumber, maxnumber)
 
 
 #Displays random number to user.
-print("\nThis is your random number, in the range of the 2 numbers you choose: " + str(rand1))
+print("\nIn the range of the numbers you choose. This is your RANDOM number: " + str(rand1))
