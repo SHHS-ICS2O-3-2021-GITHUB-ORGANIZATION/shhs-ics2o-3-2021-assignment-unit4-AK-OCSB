@@ -5,10 +5,12 @@ from pygame import Color, draw, display, time, Rect
 pygame.init()
 
 clock = time.Clock()
-pygame.display.set_caption("Save Screen")
+pygame.display.set_caption("Screen Saver")
+pygame.font.init() 
+
 
 gameDisplay = pygame.display.set_mode((600,400))
-gameDisplay.fill(Color('white'))
+
 
 x = 150
 y = 250
@@ -22,7 +24,8 @@ x4 = 170
 y4 = 270
 counter = 0
 
-while counter < 4:
+while counter < 2:
+  counter = counter + 1
   for i in range(27):
     gameDisplay.fill(Color('white'))
     draw.polygon(gameDisplay, Color('orange'), [(x, y), (x1,y1), (x1,y2)])
@@ -52,7 +55,7 @@ while counter < 4:
     y4 = y4 - i
     clock.tick(10)
     display.flip()
-  for i in range(25):
+  for i in range(20):
     gameDisplay.fill(Color('white'))
     draw.polygon(gameDisplay, Color('orange'), [(x, y), (x1,y1), (x1,y2)])
     draw.polygon(gameDisplay, Color('yellow'), [(x2, y), (x3,y1), (x3,y2)])
@@ -60,16 +63,28 @@ while counter < 4:
     draw.circle(gameDisplay, Color('white'), (x,y), (14))
     draw.circle(gameDisplay, Color('black'), (x,y), (7))
     display.flip()
-    y = y + i
+    y = y + i 
     y1 = y1 + i
     y2 = y2 + i
     y3 = y3 + i
     y4 = y4 + i
-    x = x - i
-    x1 = x1 - i
-    x2 = x2 - i
-    x3 = x3 - i
-    x4 = x4 - i
+    x = x - i -  13
+    x1 = x1 - i - 13 
+    x2 = x2 - i  -13
+    x3 = x3 - i  - 13
+    x4 = x4 - i  - 13
     clock.tick(10)
-    display.flip()
-    counter = counter + 1
+for i in range(20):
+  gameDisplay.fill(Color('white'))
+  draw.polygon(gameDisplay, Color('orange'), [(x, y), (x1,y1), (x1,y2)])
+  draw.polygon(gameDisplay, Color('yellow'), [(x2, y), (x3,y1), (x3,y2)])
+  draw.polygon(gameDisplay, Color('green'), [(x3, y3), (x4,y4), (x4,y)])
+  draw.circle(gameDisplay, Color('white'), (x,y), (14))
+  draw.circle(gameDisplay, Color('black'), (x,y), (7))
+  display.flip()
+  x = x + i
+  x1 = x1 + i 
+  x2 = x2 + i
+  x3 = x3 + i 
+  x4 = x4 + i  
+  clock.tick(10)

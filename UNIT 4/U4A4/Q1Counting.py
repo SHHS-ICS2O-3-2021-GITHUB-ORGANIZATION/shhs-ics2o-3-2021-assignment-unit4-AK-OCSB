@@ -1,7 +1,7 @@
 # NAME OF AUTHOR:Ashley Koza  
 # NAME OF THE PROGRAM: Q1 Counting
 # DATE OF CREATION: 2022-01-18
-# PURPOSE OF PROGRAM: Practice loops.
+# PURPOSE OF PROGRAM: Practice loops(while and for). 
 
 
 # VARIABLE DEFINITION
