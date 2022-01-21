@@ -4,7 +4,7 @@
 #PURPOSE OF PROGRAM: Practice pygame modules and how to move around shapes on pygame.
 
 
-
+#IMPORT
 
 import pygame
 from pygame import Color, draw, display, time
