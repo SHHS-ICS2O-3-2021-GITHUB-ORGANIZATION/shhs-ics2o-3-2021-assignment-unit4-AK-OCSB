@@ -8,8 +8,8 @@
 
 number1 = 0
 number2 = 0
-maxnumber = 0
-minnumber = 0
+maxNumber = 0
+minNumber = 0
 rand1 = 0
 
 # INPUT
@@ -31,12 +31,12 @@ import random
 
 
 #define the max and min value as to not cause an error.
-maxnumber = max(number1 , number2)
-minnumber = min(number1 , number2)
+maxNumber = max(number1 , number2)
+minNumber = min(number1 , number2)
 
 
 #Sets a range, then picks a random number between said range.
-rand1 = random.randint(minnumber, maxnumber)
+rand1 = random.randint(minNumber, maxNumber)
 
 
 # OUTPUT
