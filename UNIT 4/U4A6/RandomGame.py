@@ -45,6 +45,8 @@ if playGame == 'y':
   while userAnswer != rand1:
     userAnswer = int(input("Please guess a number you think the computer choose: "))
     counter += 1
+	
+	#fix this.
     if counter == 1:
       print("You got the correct answer. Wow it took you" , counter , "try.")
       break
