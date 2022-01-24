@@ -9,7 +9,7 @@ age = 0
 
 #INPUT
 
-#Propmt user for age
+#propmt user for age
 age = int(input("Please enter your age: "))
 
 #PROCESSING
