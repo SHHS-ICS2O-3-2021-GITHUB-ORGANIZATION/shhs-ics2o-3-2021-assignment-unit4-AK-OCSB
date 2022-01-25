@@ -1,7 +1,7 @@
 # NAME OF AUTHOR:Ashley Koza  
 # NAME OF THE PROGRAM: Q2Reverse
 # DATE OF CREATION:2022-01-24
-# PURPOSE OF PROGRAM:Practice using different command on strings. Practice time module.
+# PURPOSE OF PROGRAM:Practice using different program on strings. Practice time module.
 
 #import time modules
 import time
