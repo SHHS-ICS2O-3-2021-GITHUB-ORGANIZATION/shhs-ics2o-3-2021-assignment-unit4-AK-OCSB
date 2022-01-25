@@ -48,5 +48,5 @@ elif playGame == 'y':
     userAnswer = int(input("Please guess a number you think the computer choose: "))
     counter += 1
     if userAnswer ==rand1:
-    	print("Wow, you guessed the number it took you" , counter , "time(s) to get it right.")
+    	print("Wow, you guessed the number, it took you" , counter , "try(s) to get it right.")
 
