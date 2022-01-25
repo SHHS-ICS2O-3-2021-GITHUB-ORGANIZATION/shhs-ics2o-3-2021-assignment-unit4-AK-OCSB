@@ -25,12 +25,14 @@ texttime("HI, welcome to the Random Number Game.\nThis game ask you to enter two
 
 time.sleep(2)
 
-playGame = input("Would you like to play.\nPlease enter 'y' for yes and 'n' for no:")
-
-if playGame == 'y':
+playGame = input("\nWould you like to play.\nPlease enter 'y' for yes and 'n' for no:")
+if playGame == 'n':
+	print("bye bye")
+elif playGame == 'y':
   #promt user for 2 intergers
   number1 = int(input("Please enter an integer: "))
   number2 = int(input("Please enter another integer: "))
+
   
   import random
   
@@ -45,9 +47,6 @@ if playGame == 'y':
   while userAnswer != rand1:
     userAnswer = int(input("Please guess a number you think the computer choose: "))
     counter += 1
-    if counter == 1:
-      print("You got the correct answer. Wow it took you" , counter , "try.")
-      break
-    else:
-      print("You got the correct answer. Wow it took you" , counter , "tries.")
-      break
+    if userAnswer ==rand1:
+    	print("Wow, you guessed the number, it took you" , counter , "try(s) to get it right.")
+
