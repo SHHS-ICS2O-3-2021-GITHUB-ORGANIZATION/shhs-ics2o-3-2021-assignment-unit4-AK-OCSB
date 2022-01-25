@@ -11,7 +11,7 @@ maxNumber = 0
 minNumber = 0
 rand1 = 0
 userAnswer = 0
-counter = 0
+counter = 1
 
 #PROCESSING
 
@@ -77,19 +77,33 @@ elif playGame == 'y':
 	
   #Sets a range, then picks a random number between said range.
   rand1 = random.randint(minNumber, maxNumber)
-
-	
-	
+  
+  
+  #prompt user to guess a number
+  userAnswer = int(input("Please guess a number you think the computer choose: "))
+  
+  
+  
+  #if user's answer is equal to random number display they are correct
+  if userAnswer ==rand1:
+  	print("Wow, you guessed the number, it took you 1 try to get it right.")
+  
+  
+  
+  
   #repeats the process only while the user's answer is not equal to the random number
   while userAnswer != rand1:
-    userAnswer = int(input("Please guess a number you think the computer choose: "))
+  
+  	
+  	#prompt user to try again
+  	userAnswer = int(input("Please try again:"))
+  	
+  	#adds 1 to counter
+  	counter += 1
+  	
+  	#if user's answer is equal to random number display they are correct
+  	if userAnswer ==rand1:
+  		print("Wow, you guessed the number, it took you" , counter ,  "tries to get it right.")
+  
 
-    #add 1 to counter
-    counter += 1
-
-
-
-    #if user answer equal to random number, inform user and display how many tries it took them
-    if userAnswer ==rand1:
-    	print("Wow, you guessed the number, it took you" , counter , "try(s) to get it right.")
 
